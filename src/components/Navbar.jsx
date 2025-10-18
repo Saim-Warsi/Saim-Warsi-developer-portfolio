@@ -74,7 +74,7 @@ const Navbar = () => {
           className={cn(
             "fixed top-0 left-0 w-full h-screen bg-background/90 backdrop-blur-[2px] z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
-            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0"
+             isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           )}
         >
           <div className="flex flex-col  space-y-8 text-xl">
