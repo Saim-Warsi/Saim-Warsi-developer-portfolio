@@ -145,7 +145,7 @@ const ContactSection = () => {
             </h3>
             
             <div className="space-y-6 justify-center">
-              {/* <div className="flex items-start space-x-13 ">
+            {/* <div className="flex items-start space-x-13 ">
                 <div className="rounded-full p-3 bg-primary/10 ">
                   <Mail className="h-6 w-6 text-primary " />
                 </div>
@@ -160,21 +160,21 @@ const ContactSection = () => {
                 </div>
               </div> */}
 
-<div className="flex items-start space-x-13 ">
+              <div className="flex items-start space-x-13 ">
                 <div className="rounded-full p-3 bg-primary/10 ">
                   <Mail className="h-6 w-6 text-primary " />
                 </div>
                 <div className="text-start">
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:kamransaim385@gmail.com"
+                    href="tel:+923492970705"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    kamransaim385@gmail.com
+                   saimwarsi19
+                   @gmail.com
                   </a>
                 </div>
               </div>
-
               <div className="flex items-start space-x-13 ">
                 <div className="rounded-full p-3 bg-primary/10 ">
                   <Phone className="h-6 w-6 text-primary " />
@@ -197,7 +197,7 @@ const ContactSection = () => {
                 <div className="text-start">
                   <h4 className="font-medium">Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    North Karachi, Karachi
+                    North Karachi, Karachi 
                   </a>
                 </div>
               </div>
