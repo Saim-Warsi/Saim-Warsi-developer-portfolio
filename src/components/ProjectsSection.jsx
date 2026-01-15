@@ -2,12 +2,13 @@ import { Description } from "@radix-ui/react-toast";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import project1Mockup from '../assets/Project1Mockup.jpg'
 import project2Mockup from '../assets/Project2Mockup.jpg'
+import project3Mockup from '../assets/project3mockup (1).jpg'
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Little Lemon",
+      title: "Little Lemon | Restaurant app",
       Description:
         "A restaurant app, with real-world features like table reservation, user authentication, order management, adding items, promo codes, tracking order, stripe payment and much more.",
       image: project1Mockup,
@@ -17,7 +18,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Little Lemon Admin panel",
+      title: "Little Lemon | Admin panel",
       Description:
         "An Admin panel with features like managing reservations, completely managing orders and their status and generating promo codes and much more.",
       image: project2Mockup,
@@ -27,13 +28,13 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Social Media App",
+      title: "Ta-alluk | Social Media App",
       Description:
-        "Coming Soon",
-      image: "#",
+        "A social media app that lets you connects, chat, discover and interact with posts and stories with other users.",
+      image: project3Mockup,
       tags: ["MERN stack", "Tailwind"],
-      demoUrl: "#",
-      gitHub: "#",
+      demoUrl: "https://ta-alluk.vercel.app/",
+      gitHub: "https://github.com/Saim-Warsi/Ta-alluk-Social-Media-App",
     },
   ];
   return (
@@ -81,7 +82,7 @@ const ProjectsSection = () => {
                     {project.Description}
                   </p>
                   <div className="flex gap-4 items-center mt-6">
-                    {project.demoUrl !== "#" ? (
+                   
                       <a
                         href={project.demoUrl}
                         className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-300 cursor-pointer z-10 relative"
@@ -96,13 +97,7 @@ const ProjectsSection = () => {
                         <ExternalLink size={20} className="flex-shrink-0" />
                         <span>Demo</span>
                       </a>
-                    ) : (
-                      <span className="flex items-center gap-2 text-sm font-medium text-muted-foreground/50 cursor-not-allowed">
-                        <ExternalLink size={20} className="flex-shrink-0" />
-                        <span>Demo</span>
-                      </span>
-                    )}
-                    {project.gitHub !== "#" ? (
+                  
                       <a
                         href={project.gitHub}
                         className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-300 cursor-pointer z-10 relative"
@@ -117,12 +112,7 @@ const ProjectsSection = () => {
                         <Github size={20} className="flex-shrink-0" />
                         <span>Code</span>
                       </a>
-                    ) : (
-                      <span className="flex items-center gap-2 text-sm font-medium text-muted-foreground/50 cursor-not-allowed">
-                        <Github size={20} className="flex-shrink-0" />
-                        <span>Code</span>
-                      </span>
-                    )}
+                  
                   </div>
                 </div>
               </div>
